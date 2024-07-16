@@ -1,0 +1,68 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Associação</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="my-4">Cadastro de Associação</h1>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="associado-tab" data-toggle="tab" href="#associado" role="tab"
+                    aria-controls="associado" aria-selected="true">Associado</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="colaborador-tab" data-toggle="tab" href="#colaborador" role="tab"
+                    aria-controls="colaborador" aria-selected="false">Colaborador</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="fornecedor-tab" data-toggle="tab" href="#fornecedor" role="tab"
+                    aria-controls="fornecedor" aria-selected="false">Fornecedor</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="associado" role="tabpanel" aria-labelledby="associado-tab">
+                <form id="associadoForm" class="my-4">
+                    <!-- Campos do Associado -->
+                    <!-- Conteúdo semelhante aos demais forms -->
+                    <button type="button" class="btn btn-primary" onclick="adicionarAssociado()">Adicionar
+                        Associado</button>
+                </form>
+                <div id="listaAssociados"></div>
+            </div>
+            <div class="tab-pane fade" id="colaborador" role="tabpanel" aria-labelledby="colaborador-tab">
+                <form id="colaboradorForm" class="my-4">
+                    <!-- Campos do Colaborador -->
+                    <!-- Conteúdo semelhante aos demais forms -->
+                    <button type="button" class="btn btn-primary" onclick="adicionarColaborador()">Adicionar
+                        Colaborador</button>
+                </form>
+                <div id="listaColaboradores"></div>
+            </div>
+            <div class="tab-pane fade" id="fornecedor" role="tabpanel" aria-labelledby="fornecedor-tab">
+                <form id="fornecedorForm" class="my-4">
+                    <!-- Campos do Fornecedor -->
+                    <!-- Conteúdo semelhante aos demais forms -->
+                    <button type="button" class="btn btn-primary" onclick="adicionarFornecedor()">Adicionar
+                        Fornecedor</button>
+                </form>
+                <div id="listaFornecedores"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
